@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> <!-- links HTML & Bootstrap -->
+
+</head>
+<body>
+<div class="containerfluid p-0"> <!--full width container that spans through entire browser with 0 padding--> 
+    <div class="bg-success text-center" style="background-image: url(plantbanner.jpeg); background-size: cover;"> <!-- banner -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!-- responsive dark navigation that collapses-->
+        <a class="navbar-brand" href="index.html">The Greenhouse</a> <!-- link to home (Inventory)-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse"> <!--Small icon three lines-->
+        data-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <!--creating a toggle-->
+            <span class="navbar-toggler-icon"></span> <!--three dots-->
+        </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown"> <!--id matches with data target-->
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Inventory</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./locations.html">Locations</a>
+            </li>
+            
+        </ul>  
+    </div>
+     </nav>
+
+    <div id="main-container" class="container pt-2 pb-5 bg-light"> <!-- fixed width container centered-->
+            <div>
+              <img
+              src="./Images/plantbanner.jpeg"
+              class="img-fluid" alt="Plant Banner"
+              alt="A lot of cartoon plants"
+              width="2000"/> <!--2000 pixels maximun width-->
+    </div>
+    
+    <div class="container text-center mb-5 fs-5"> <!--text centered--> <!--fs - font size-->
+        <div class="row"><h1>Check Out Our Current Inventory</h1></div>
+
+        <div class="row"> <!--ensures the columns align-->
+          <div class="col-lg-2">Totem Pole Cactus</div> <!-- 'col-lg-2' 2 columns x 6=12 - columns will fill entire row on large screens-->
+          <div class="col-lg-2">Pickly Pear Cactus</div>
+          <div class="col-lg-2">Aloe Vera</div>
+          <div class="col-lg-2">Desert Willow</div>
+          <div class="col-lg-2">Arizona Poppy</div>
+          <div class="col-lg-2">Yucca</div>
+    </div>
+
+    <div class="container text-center mb-5 fs-2">
+        <div class="row">
+          <div class="col-md-12"> <!-- takes full width of the row on medium and larger screens-->
+            <div id="card-1" class="card bg-success">
+              <img
+                src="./Images/totem.jpeg.jpg"
+                class="card-img-top"> <!--image that it's at the top of a card-->
+                alt="Totem Pole Cactus"
+                width="100"/>
+              <div class="card-body"> <!--Card content-->
+                <h5 class="card-title">Totem Pole Cactus</h5>
+              </div>
+            </div>
+    </div>
+
+        <div class="col-md-12">
+            <div id="card-2" class="card bg-success ">
+              <img
+                src="./Images/pickly.jpeg.jpg "
+                class="card-img-top"
+                alt="Pickly Pear Cactus "
+                width="100"/>
+              <div class="card-body">
+                <h5 class="card-title">Pickly Pear Cactus</h5>
+              </div>
+            </div>
+        </div>
+
+          <div class="col-md-12">
+            <div id="card-3" class="card bg-success">
+              <img
+                src="./Images/aloe.jpeg.jpg"
+                class="card-img-top"
+                alt="Aloe Vera."
+                width="100"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Aloe Vera</h5>
+              </div>
+            </div>
+            <div class="col-md-12">
+                <div id="card-3" class="card bg-success">
+                  <img
+                    src="./Images/desert.jpeg.webp"
+                    class="card-img-top"
+                    alt="Desert Willow."
+                    width="100"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Desert Willow</h5>
+                  </div>
+             </div>
+             <div class="col-md-12">
+                <div id="card-3" class="card bg-success">
+                  <img
+                    src="./Images/poppy.jpeg.jpeg"
+                    class="card-img-top"
+                    alt="Arizona Poppy."
+                    width="100"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Arizona Poppy</h5>
+                  </div>
+             </div>
+             <div class="col-md-12">
+                <div id="card-3" class="card bg-success">
+                  <img
+                    src="./Images/yucca.jpeg.jpeg"
+                    class="card-img-top"
+                    alt="Yucca"
+                    width="100"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Yucca</h5>
+                  </div>
+             </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="containerfluid p-0">
+        <div class="bg-success text-center" style="background-image: url(plantbanner.jpeg); background-size: cover;">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">The Greenhouse</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <!--creating a toggle-->
+                <span class="navbar-toggler-icon"></span> <!--three dots-->
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown"> <!--id matches with data target-->
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Inventory</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./locations.html">Locations</a>
+                </li>
+            </ul>  
+        </div>
+         </nav>
+         <div id="main-container" class="container pt-2 pb-5 bg-light">
+            <div>
+              <img
+                src="./Images/plantbanner.jpeg"
+                class="img-fluid" alt="Plant Banner"
+                alt="A lot of cartoon plants"
+                width="2000"/>
+    </div>
+
+<div class="container text-center mb-5 fs-5">
+    <h1>Locations</h1>
+    <div class="d-flex justify-content-center"> <!--centers flex elements. A container that centers the content.-->
+    <table class="table table-success table-hover table-bordered" style="table-layout: fixed; width: 100%;"> <!-- fixed table layout-->
+        <thead>
+        <tr>
+            <th class="p-3">Store</th> <!--'p-3' adds padding (1rem or 16 pixels)-->
+            <th class="p-3">Address</th>
+            <th class="p-3">Phone #</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="p-3">The Greenhouse at Downtown</td>
+            <td class="p-3">123 Street, Phoenix 85001</td>
+            <td class="p-3">(888) 888-8888</td>
+        </tr>
+
+        <tr>
+            <td class="p-3">The Greenhouse at Tempe</td>
+            <td class="p-3">123 Street, Tempe 85003</td>
+            <td class="p-3">(888) 888-8888</td>
+        </tr>
+
+        <tr>
+            <td class="p-3">The Greenhouse at Chandler</td>
+            <td class="p-3">123 Street, Chandler 80005</td>
+            <td class="p-3">(888) 888-8888</td>
+        </tr>
+    </tbody>
+    </table>
+    </div>
+</div>
+    
+
+    <!---Sign up form-->
+
+<div class="container my-5"> <!--Space above and below 'sign up..'-->
+<div class="card mx-auto"> <!--sets marging automatically-->
+<div class="card-header bg-success text-white text-center">
+    <h4>Sign up to be the first one to get our updates</h4>
+</div>
+<div class="card-body">
+    <form>
+    <div class="mb-3">
+        <label for="Firstname" class="form-label">First Name:</label>
+        <input type="text" class="form-control" id="firstname" placeholder="First Name"/>
+    </div>
+    <div class="mb-3">
+        <label for="lastname" class="form-label">Last Name:</label>
+        <input type="text" class="form-control" id="lastname" placeholder="Last Name"/>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="text" class="form-control" id="email" placeholder="Email"/> <!--'form-control' makes input fil be responsive-->
+    </div>
+        <button type="Submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
+</div>
+</body>
+</html>
